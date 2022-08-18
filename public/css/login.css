@@ -1,0 +1,45 @@
+body{
+    background: linear-gradient(116.82deg, #34344A 0%, #80475E 100%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calcform{
+    background-color: #f2f7f27c;
+    padding: 60px;
+    border-radius: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+#inputEmail, #inputPassword{
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+#connexion{
+    border: 2px black solid;
+    margin-top: 20px;
+
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    body{
+        min-height: 935px;
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    body{
+        min-height: 1297px;
+    }
+}
