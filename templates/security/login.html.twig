@@ -10,8 +10,13 @@
         {% endif %}
     
         {% if app.user %}
+            <div id="home">
+                <a href="{{ path('home') }}">
+                    <img src="/assets/img/Home.png" alt="home">
+                </a>
+            </div>
             <div class="mb-3">
-                You are logged in as {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Logout</a>
+                Vous êtes connecté en tant que {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Déconnexion</a>
             </div>
         {% endif %}
     
@@ -24,15 +29,13 @@
         {#
         Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
         See https://symfony.com/doc/current/security/remember_me.html
-        #}
-        {# <div> #}
             <div class="checkbox mb-3">
                 <label>
                     <input type="checkbox" name="_remember_me"> Se souvenir de moi
                 </label>
             </div>
+        #}
             <a href="{{ path('app_forgot_password_request') }}">Mot de passe oublié</a>
-        {# </div> #}
     
         <button class="btn btn-lg btn-muted" type="submit" id="connexion">
             Connexion
